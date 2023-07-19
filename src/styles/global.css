@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply block bg-gradient-to-r from-orange-400 to-orange-600 text-white text-lg font-bold p-4 rounded-full w-[17.5rem] text-center shadow-md hover:opacity-70;
+  }
+
+  .btn-secondary {
+    @apply block bg-white text-main-800 text-lg font-bold p-4 rounded-full w-[17.5rem] text-center border border-gray-300 shadow-md hover:opacity-70;
+  }
+}
