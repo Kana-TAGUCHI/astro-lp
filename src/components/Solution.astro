@@ -1,0 +1,56 @@
+---
+import { Image } from 'astro:assets';
+import refitTerm from '../assets/refit_term.svg';
+import howFlowSp from '../assets/how_flow_sp.jpg';
+import howFlowPc from '../assets/how_flow_pc.jpg';
+---
+
+<section>
+  <div class='container mx-auto px-4 pt-20 pb-[60px] md:py-[120px]'>
+    <div class='font-bold text-center'>
+      <span class='md:text-lg'>OUR SOLUTION</span>
+      <h2 class='text-2xl md:text-4xl'>Re:Fit（レフィット）とは？</h2>
+    </div>
+    <p
+      class='pt-10 text-xl font-semibold text-center mx-auto md:text-3xl md:text-left md:w-[74%]'
+    >
+      企業の採用ミスフィットを防ぎ、<span
+        class='bg-gradient-to-r from-main-200 to-main-400 bg-[length:100%_30%] bg-bottom bg-no-repeat inline-block rounded-md leading-8'
+        >よりあなたの会社にフィットした</span
+      ><br class='md:hidden' />IT人材を採用するサービスです。
+    </p>
+
+    <div
+      class='grid bg-gray-50 rounded-xl mt-9 px-4 py-5 gap-5 md:py-12 md:mt-12 md:px-20 md:grid-flow-cols md:grid-flow-row md:items-center md:justify-center md:gap-y-0 lg:gap-x-24'
+    >
+      <h3
+        class='text-xl font-bold text-center lg:text-3xl md:text-left md:self-end'
+      >
+        Fit期間（フィット期間）とは？
+      </h3>
+      <Image
+        src={refitTerm}
+        alt={'握手しているイラスト'}
+        width={400}
+        class='mx-auto md:mx-0 md:row-span-2 md:justify-self-end md:h-72'
+      />
+      <p class='lg:text-lg'>
+        Fit期間（フィット期間）とは、双方にお互いを深く正社員採用・入社をするための期間。即正社員は企業様・求職者双方にミスフィットがあるため、初めの数か月をFit期間（副業・業務委託期間）とし実際の業務や企業風土を体験した上で、双方が納得して採用・入社できる即戦力として迎えるための期間です。
+      </p>
+      <img
+        src={howFlowSp.src}
+        height={howFlowSp.height}
+        width={howFlowSp.width}
+        class='mx-auto w-full md:hidden'
+        alt={'従来と異なるFit期間のイメージを図で表現している様子'}
+      />
+      <img
+        src={howFlowPc.src}
+        height={howFlowPc.height}
+        width={howFlowPc.width}
+        class='hidden mx-auto w-full md:block col-span-2 pt-12'
+        alt={'従来と異なるFit期間のイメージを図で表現している様子'}
+      />
+    </div>
+  </div>
+</section>

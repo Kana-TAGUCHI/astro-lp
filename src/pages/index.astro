@@ -1,10 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Problem from '../components/Problem.astro';
+import Solution from '../components/Solution.astro';
 ---
 
 <Layout>
   <main class='pt-[58px] lg:pt-[72px]'>
-    メインコンテンツ
+    <Hero />
+    <Problem />
+    <Solution />
     <section class='h-[700px] bg-amber-400' id='feature'>Section1</section>
     <section class='h-[700px] bg-amber-500' id='flow'>Section2</section>
     <section class='h-[700px] bg-amber-600' id='faq'>Section2</section>

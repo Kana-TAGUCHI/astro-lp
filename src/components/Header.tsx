@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FiChevronRight, FiExternalLink } from 'react-icons/fi';
 import { Link as ScrollLink } from 'react-scroll';
-import logo from '../images/logo.svg';
+import logo from '../assets/logo.svg';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +14,15 @@ export const Header = () => {
   ];
 
   return (
-    <header className='fixed z-10 w-full top-0 bg-white'>
+    <header className='fixed z-50 w-full top-0 bg-white'>
       <div className='flex justify-between items-center max-w-container mx-auto w-full h-full p-4 border-b border-gray-200 lg:py-4 lg:px-10'>
         <a href='/' className='w-20 h-5 lg:w-28'>
-          <img src={logo} alt='Refit' />
+          <img
+            src={logo.src}
+            width={logo.width}
+            height={logo.height}
+            alt='Refit'
+          />
         </a>
         <button
           className='space-y-1 z-50 lg:hidden'
