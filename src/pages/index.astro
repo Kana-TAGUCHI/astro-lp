@@ -3,6 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import Problem from '../components/Problem.astro';
 import Solution from '../components/Solution.astro';
+import Feature from '../components/Feature.astro';
+import Comparison from '../components/Comparison.astro';
+import Flow from '../components/Flow.astro';
 ---
 
 <Layout>
@@ -10,8 +13,9 @@ import Solution from '../components/Solution.astro';
     <Hero />
     <Problem />
     <Solution />
-    <section class='h-[700px] bg-amber-400' id='feature'>Section1</section>
-    <section class='h-[700px] bg-amber-500' id='flow'>Section2</section>
+    <Feature />
+    <Comparison />
+    <Flow />
     <section class='h-[700px] bg-amber-600' id='faq'>Section2</section>
   </main>
 </Layout>

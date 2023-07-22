@@ -10,4 +10,8 @@
   .btn-secondary {
     @apply block bg-white text-main-800 text-lg font-bold p-4 rounded-full w-[17.5rem] text-center border border-gray-300 shadow-md hover:opacity-70;
   }
+
+  .section-container {
+    @apply box-content max-w-[1200px] mx-auto px-4 pt-20 pb-[60px] md:py-[120px];
+  }
 }

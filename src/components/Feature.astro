@@ -1,0 +1,84 @@
+---
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon';
+import feature01 from '../assets/feature_01.webp';
+import feature02 from '../assets/feature_02.webp';
+import feature03 from '../assets/feature_03.webp';
+import cash_flow_pc from '../assets/cash_flow_pc.webp';
+import cash_flow_sp from '../assets/cash_flow_sp.webp';
+
+const features = [
+  {
+    icon: '01',
+    img: feature01,
+    alt: 'ノートパソコンでメールを使用している',
+    title: '応募を待つだけでなく求職者へ無制限で直接スカウト可能！',
+    text: '求職者からの応募だけではなく、採用担当者から無料で無制限にスカウトが可能です。そのため、少しでも気になる求職者がいれば声をかけてみてまずは面談、そして双方が合致すればFit期間で働いてもらうことも可能です。',
+  },
+  {
+    icon: '02',
+    img: feature02,
+    alt: 'ノートパソコンでメールを使用している',
+    title: 'まずFit期間（副業・業務委託）で実力を試して採用可否の判断が可能！',
+    text: '履歴書や面談だけでは実際の実力は把握できないもの。そのためFit期間に実際に働いてもらい求職者の実力の把握や企業風土を把握してもらった上での正社員採用が可能です。（即正社員採用も双方が良ければ可能です）',
+  },
+  {
+    icon: '03',
+    img: feature03,
+    alt: 'Fit期間後の正社員採用時に手数料一切なし！',
+    title: 'まずFit期間（副業・業務委託）で実力を試して採用可否の判断が可能！',
+    text: 'Re:Fit（レフィット）では、月額費以外一切手数料はかかりません。そのためFit期間後に正社員採用を何人しても料金は変わりません。（任意でFit期間後に正社員になった方に直接払う入社祝い金制度を設けております）',
+  },
+];
+---
+
+<section id='feature' class='bg-main-50'>
+  <div class='section-container'>
+    <div class='font-bold text-center'>
+      <span class='md:text-lg'>FEATURE</span>
+      <h2 class='text-2xl md:text-4xl'>Re:Fit（レフィット）の特徴</h2>
+    </div>
+    <ul class='flex flex-col gap-14 mt-4 md:gap-20 md:mt-20'>
+      {
+        features.map((feature, index) => (
+          <li
+            class={`flex flex-col justify-around items-center md:gap-6 lg:gap-12 ${
+              index !== 1 ? `md:flex-row-reverse` : `md:flex-row`
+            }`}
+          >
+            <Image
+              src={feature.img}
+              width={480}
+              class='w-full px-5 md:max-w-[48%] md:px-0 lg:max-w-[480px]'
+              alt={feature.alt}
+            />
+            <div class='relative pt-6 md:max-w-[50%]'>
+              <div class='flex gap-6 items-center'>
+                <Icon
+                  name={feature.icon}
+                  class='w-[61px] h-[48px] absolute -top-[24px] shrink-0 lg:w-[122px] lg:h-[96px] md:static'
+                />
+                <h3 class='text-xl font-semibold lg:text-3xl'>
+                  {feature.title}
+                </h3>
+              </div>
+              <p class='mt-3 lg:text-lg md:mt-6'>{feature.text}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+    <div class='mt-8 md:mt-20'>
+      <Image
+        src={cash_flow_sp}
+        class='w-full md:hidden'
+        alt={'月額利用料はたったの5万円で利用できる様子を表したフロー図'}
+      />
+      <Image
+        src={cash_flow_pc}
+        class='w-full hidden md:block'
+        alt={'月額利用料はたったの5万円で利用できる様子を表したフロー図'}
+      />
+    </div>
+  </div>
+</section>
