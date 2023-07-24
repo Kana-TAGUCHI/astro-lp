@@ -57,7 +57,7 @@ export const Header = () => {
                 className='py-4 px-2 border-b border-gray-200 w-full lg:w-auto lg:border-b-0 lg:p-0'
               >
                 <ScrollLink
-                  className='cursor-pointer flex items-center gap-2'
+                  className='cursor-pointer flex items-center gap-2 hover:text-main-700'
                   to={item.link}
                   spy={true}
                   smooth={true}
@@ -85,7 +85,7 @@ export const Header = () => {
               href='/'
               target='_blank'
               rel='noopener noreferrer'
-              className='flex items-center justify-center font-semibold text-lg gap-1 pt-2 lg:text-sm lg:pt-0'
+              className='flex items-center justify-center font-semibold text-lg gap-1 pt-2 lg:text-sm lg:pt-0 hover:opacity-70'
             >
               求職者はこちら
               <FiExternalLink className='text-2xl font-bold lg:text-md' />
