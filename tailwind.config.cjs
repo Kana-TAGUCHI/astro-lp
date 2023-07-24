@@ -58,11 +58,12 @@ module.exports = {
         md: '1rem', // 16px
         lg: '1.125rem', // 18px
         xl: '1.25rem', // 20px
+        22: '1.375rem', // 22px
         '2xl': '1.5rem', // 24px
         '3xl': '1.875rem', // 30px
         '4xl': '2.375rem', // 38px
         '5xl': '3rem', // 48px
-        '6xl': '3.75rem', // 60px
+        '6xl': '3.625rem', // 58px
         '7xl': '4.375rem', // 70px
         '8xl': '6rem', // 96px
       },

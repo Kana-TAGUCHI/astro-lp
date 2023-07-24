@@ -7,6 +7,10 @@
     @apply block bg-gradient-to-r from-orange-400 to-orange-600 text-white text-lg font-bold p-4 rounded-full w-[21.25rem] text-center shadow-md transition-all md:text-xl md:py-5 hover:opacity-70;
   }
 
+  .btn-primary-up {
+    @apply block bg-gradient-to-r from-orange-400 to-orange-600 text-white text-lg font-bold p-4 rounded-full w-[21.25rem] text-center transition-all duration-300 md:text-xl md:py-5 hover:translate-y-[-4px] hover:shadow-xl;
+  }
+
   .btn-secondary {
     @apply block bg-white text-main-800 text-lg font-bold p-4 rounded-full w-[17.5rem] text-center border border-gray-300 shadow-md transition-all hover:opacity-70;
   }
