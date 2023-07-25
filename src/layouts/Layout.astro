@@ -4,9 +4,14 @@ import '../styles/global.css';
 
 type Props = {
   title?: string;
+  description?: string;
 };
 
-const { title = 'Refit' } = Astro.props;
+// TODO テキスト差し替え
+const {
+  title = 'Refit',
+  description = 'Fit感を徹底的に追及したIT特化型人材採用サービス',
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -24,6 +29,7 @@ const { title = 'Refit' } = Astro.props;
       rel='stylesheet'
     />
     <title>{title}</title>
+    <meta name='”description”' content={description} />
   </head>
   <body class='font-body'>
     <Header client:load />

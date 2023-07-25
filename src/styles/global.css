@@ -4,7 +4,7 @@
 
 @layer components {
   .btn-primary {
-    @apply block bg-gradient-to-r from-orange-400 to-orange-600 text-white text-lg font-bold p-4 rounded-full w-[21.25rem] text-center shadow-md transition-all md:text-xl md:py-5 hover:opacity-70;
+    @apply block bg-gradient-to-r from-orange-400 to-orange-600 text-white text-lg font-bold p-4 rounded-full w-[17.5rem] text-center shadow-md transition-all md:text-xl md:py-5 hover:opacity-70;
   }
 
   .btn-primary-up {
